@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    //will sort the array and then we can return arr of k-1 and arr.length-k
+
+    const arr = [2, 1, 4, 3, 6, 5, 7];
+    findKthSmallestOrLargest([2, 1, 4, 3, 6, 5, 7], 3);
+    function findKthSmallestOrLargest(arr, k) {
+        let arrA = arr.sort()
+        let myobj = {}
+        myobj.smallest = arrA[k - 1]
+        myobj.largest = arrA[arrA.length - k]
+        console.log(myobj);
+    }
+</script>
